@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    font-family: 'Russo One', sans-serif;
+}
+
+.juego{
+    display: flex;
+  }
+  
+  .tablero{
+    background: rgb(235,76,200);
+    background: linear-gradient(175deg, rgba(235,76,200,1) 0%, rgba(176,57,184,1) 52%, rgba(118,38,168,1) 98%); 
+    width: 100%;
+    padding: 30px;
+    color: #fff;
+    font-weight: 600;
+  }
+
+
+
+  .tablero{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .remera{
+    text-align: center;
+   
+  }
+
+  .info h1{
+    font-size: 30px;
+  }
+
+  .remera span{
+    font-size: 25px;
+  }
+
+
+  .opcion a{
+    color: #7b28a9;
+    background: #fff;
+     font-size: 25px;
+     border: solid 2px;
+     padding: 10px;
+     border-radius: 50px;
+     padding-left: 15px;
+     padding-right: 15px;
+     height: 30px;
+     transition: 1s;
+     margin-top: -5px;
+     cursor: pointer;
+   }
+   
+   
+   .opcion {
+     text-align: right;
+     margin-top: -10px;
+     background: #7e29aa;
+     padding: 20px;
+     border-radius: 20px;
+     box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+     display: flex;
+     justify-content: space-between;
+     height: 40px;
+   }
+
+
+   .opcion h3{
+    margin-top: 10px;
+   }
+   
+   
+   .opcion a:hover{
+      color: #fff;
+      background: #7e29aa;
+   }
+
+
+   .configurar{
+    display: block;
+    width: 600px;
+    height: 300px;
+    background: rgb(235,76,200);
+    background: radial-gradient(circle, rgba(235,76,200,1) 0%, rgba(118,38,168,1) 98%); 
+    position: fixed;
+    bottom: 3px;
+    left: -800px;
+    text-align: center;
+    padding: 20px;
+    border-top-right-radius: 50px;
+  }
+
+ 
+
+  .opciones img{
+    height: 100px;
+    width: 100%;
+    border-radius: 50px;
+
+  }
+
+  .opciones{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    grid-gap: 10px;
+  }
+  
+
+  .op{
+    background: #7e29aa;
+    border: solid 1px #7e29aa !important;
+    border-radius: 20px;
+    cursor: pointer;  
+    margin-top: 10px;
+  }
+
+  .op:hover {
+    background: #f5069d;
+    border-radius: 20px;
+    border: solid 1px #f5069d !important;
+    filter: drop-shadow(1px 1px 20px #f5069d);
+      
+  }
+  
+  .configurar .cerrar{
+    position: absolute;
+   right: 30px;
+   top: 20px;
+   cursor: pointer;
+   font-size: 20px;
+   padding: 10px;
+   height: 25px;
+ }
+
+ .configurar p {
+  font-size: 12px;
+  font-weight: 100;
+  line-height: 20px;
+}
+  
+  .opciones .img {
+    padding: 10px;
+  }
+
+
+  .reloj {
+    background: #fff;
+    color: #15173e;
+    text-align: center;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+    height: 20px;
+  }
+
+  .salir a {
+    background: black;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 1s;
+    color: #fff;
+  }
+  
+  .salir a:hover{
+    background: transparent;
+ 
+    border: solid 1px;
+  }
+  
+  .salir{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+  }
+  
+  .juego{
+    position: relative;
+  }
+
+
+
+  @media(max-width: 1200px){
+    canvas{
+      height: 100vh;
+    }
+
+    .remera img{
+      width: 50%;
+      
+    }
+
+    .info h1{
+      font-size: 25px;
+    }
+  }
+
+  @media(min-width: 1800px ){
+    .tablero{
+      width: 20%;
+    }
+
+    .juego{
+      margin: auto;
+    }
+
+    body{
+      background: black;
+    }
+
+  }
+
+
+  @media(max-width: 640px){
+    .juego{
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+    }
+    
+  }

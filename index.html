@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipo 11 - Mandalorians</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/7463cc8112.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="juego">
+
+        
+    <canvas id="miCanvas" width="1000px" height="650px"></canvas>
+
+    <div class="tablero">
+
+        <div class="info">
+            <div class="opcion">
+                <h3>Configuracion >></h3>
+                <a class="abrir"><i class="far fa-eye"></i></a>
+
+                <div class="configurar" id="configuarar">
+                   <h3>Opcion para Daltonismo</h3>
+
+                   <div class="opciones">
+
+                        <div class="op1 op">
+                            <div class="img"><img src="img/1.jpg" alt=""></div>
+                            <h4>Normal</h4>
+                        </div>
+                        <div class="op2 op">
+                            <div class="img"><img src="img/2.jpg" alt=""></div>
+                            <h4>Protanopia</h4>
+                            <p>Ausencia del color  <span style="color: red;">Rojo</span> </p>
+                        </div>
+                        <div class="op3 op">
+                            <div class="img"><img src="img/3.jpg" alt=""></div>
+                            <h4>Deuteranopia</h4>
+                            <p>Ausencia del color  <span style="color: green;">Verde</span> </p>
+                        </div>
+                        <div class="op4 op">
+                            <div class="img"><img src="img/4.jpg" alt=""></div>
+                            <h4>Tritanopia</h4>
+                            <p>Ausencia del color  <span style="color: blue;">Azul</span> </p>
+                        </div>
+
+                   </div>
+
+                   <a class="cerrar"><i class="fas fa-angle-double-left"></i> Cerrar</a>
+                </div>
+
+            </div>
+            <h1>A ordernar la ropa!</h1>
+            <p>Guarda en la caja la ropa segun el color que te indiquen antes de que termine el tiempo.</p>
+
+            <div class="reloj" id="reloj">
+               
+            </div>
+        </div>
+        
+
+        <div class="remera" id="remera"></div>
+
+        <div class="salir">
+            <a href="../index.html">Salir <i class="fas fa-door-open"></i></a>
+        </div>
+    </div>
+
+
+    </div>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
